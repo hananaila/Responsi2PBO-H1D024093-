@@ -1,0 +1,20 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa perbedaan antara interface dengan class biasa?
+2. Mengapa interface tidak memiliki implementasi method di dalamnya?
+3. Apa tujuan penggunaan keyword "implements" pada sebuah class?
+4. Apakah sebuah class dapat mengimplementasikan lebih dari satu interface? Jelaskan dan berikan contoh sederhana.
+5. Jika sebuah class mengimplementasikan interface, apa yang terjadi jika class tersebut tidak mengimplementasikan semua method dari interface tersebut?
+
+Jawaban:
+
+1. Interface vs Class: Interface hanya berisi deklarasi method (kontrak) dan konstanta, tidak punya state/variabel biasa (kecuali static final). Class punya state dan implementasi.
+
+2. Kenapa tidak ada implementasi: Karena interface hanya mendefinisikan "apa yang bisa dilakukan", bukan "bagaimana caranya". Caranya urusan class yang menggunakan.
+
+3. Tujuan implements: Menyatakan bahwa class tersebut sanggup memenuhi kontrak (semua method) yang ada di interface.
+
+4. Multiple Interface: Bisa. Class bisa implement banyak interface. Contoh: class Smartphone implements Camera, Phone, MusicPlayer.
+
+5. Jika tidak semua di-implement: Class itu akan dianggap belum jadi (masih abstrak), jadi harus dibuat label abstract dan tidak bisa dibuat objeknya.

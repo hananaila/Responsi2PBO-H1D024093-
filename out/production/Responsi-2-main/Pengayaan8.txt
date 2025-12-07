@@ -1,0 +1,19 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawaban: 
+
+1. Tujuan Interface: Menciptakan standarisasi. Interface memastikan class yang berbeda-beda punya cara interaksi yang sama (method yang sama).
+
+2. Banyak implementasi: Memungkinkan fleksibilitas. Satu interface bisa menjadi "wajah" bagi database SQL, File Text, atau Cloud, tanpa perlu ngerubah kode utamanya.
+
+3. Extends vs Implements: Extends itu mewarisi sifat (hubungan darah/genetis), kalau Implements itu menyetujui kontrak kerja (kemampuan).
+
+4. Default Method: Agar kita bisa menambahkan method baru di interface tanpa merusak class lama yang sudah mengimplementasikan interface tersebut.
+
+5. Multiple Interface: Java tidak support multiple inheritance class (extends A, B) karena bingung kalau ada method yang sama. Tapi multiple interface boleh banyak, karena Interface nggak bawa logika/state yang bikin bentrok.
